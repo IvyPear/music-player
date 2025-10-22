@@ -1,4 +1,3 @@
-
 * {
   margin: 0;
   padding: 0;
@@ -8,7 +7,7 @@
 :root {
   --font-main: "Inter", sans-serif;
   --color-bg: #121212;
-  --color-text: #e2e8f0; 
+  --color-text: #fff; 
   --color-card: #1e1e1e; 
   --color-primary: #3b82f6;
   --color-border: #333; 
@@ -18,12 +17,10 @@
 body {
   font-family: var(--font-main);
   background-color: var(--color-bg);
-  color: var(--color-text);
-  height: 100vh;
+  color: #fff; 
   overflow: hidden;
 }
 
-/* Layout */
 .app {
   display: grid;
   grid-template-columns: 240px 1fr 300px;
@@ -64,7 +61,6 @@ body {
   color: #fff;
 }
 
-/* Sidebar */
 .logo {
   display: flex;
   align-items: center;
@@ -75,15 +71,15 @@ body {
 .circle-icon {
   width: 35px;
   height: 35px;
-  border: 8px solid var(--color-text);
+  border: 8px solid #fff; 
   border-top-color: transparent;
   border-radius: 50%;
-
 }
 
 .logo-text {
   font-size: 1.4rem;
   font-weight: bold;
+  color: #fff; 
 }
 
 .menu-item {
@@ -92,7 +88,7 @@ body {
   gap: 0.5rem;
   padding: 0.5rem;
   border-radius: 8px;
-  color: var(--color-text);
+  color: #fff; 
   text-decoration: none;
   transition: background 0.3s ease, transform 0.2s ease;
 }
@@ -134,6 +130,7 @@ body {
   padding: 0.5rem 1rem;
   border-radius: 20px;
   cursor: pointer;
+  color: #fff; 
   transition: background 0.3s ease;
 }
 
@@ -171,6 +168,10 @@ body {
   opacity: 0.9;
 }
 
+.album-card h3, .album-card p { 
+  color: #fff;
+}
+
 .picked-card {
   display: flex;
   background: var(--color-primary);
@@ -193,12 +194,17 @@ body {
   flex: 1;
 }
 
+.picked-info h3, .picked-info p {
+  color: #fff;
+}
+
 .tags span {
   background: rgba(255, 255, 255, 0.2);
   padding: 0.3rem 0.6rem;
   border-radius: 10px;
   margin-right: 0.5rem;
   transition: background 0.3s ease;
+  color: #fff; 
 }
 
 .tags span:hover {
@@ -220,13 +226,17 @@ body {
   background: var(--color-border);
 }
 
+.recent-item h4, .recent-item p { 
+  color: #fff;
+}
+
 .search-bar input {
   width: 100%;
   padding: 0.5rem;
   border: 1px solid var(--color-border);
   border-radius: 20px;
   background: var(--color-card);
-  color: var(--color-text);
+  color: #fff; 
   transition: border-color 0.3s ease;
 }
 
@@ -255,6 +265,10 @@ body {
   border-radius: 50%;
 }
 
+.artist-card span { 
+  color: #fff;
+}
+
 .podcasts-list {
   display: flex;
   gap: 1rem;
@@ -271,6 +285,10 @@ body {
   transform: translateY(-2px);
 }
 
+.podcast-card h4 { 
+  color: #fff;
+}
+
 .queue-item {
   display: flex;
   align-items: center;
@@ -284,6 +302,10 @@ body {
 
 .queue-item:hover {
   background: var(--color-border);
+}
+
+.queue-item h4, .queue-item p {
+  color: #fff;
 }
 
 .current-song {
@@ -351,7 +373,6 @@ body {
   border-radius: 2px;
   transition: width 0.1s ease;
 }
-
 
 @media (max-width: 768px) {
   .app {

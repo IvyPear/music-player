@@ -1,5 +1,4 @@
-/* style.css */
-/* Reset and Base Styles */
+
 * {
   margin: 0;
   padding: 0;
@@ -8,12 +7,12 @@
 
 :root {
   --font-main: "Inter", sans-serif;
-  --color-bg: #121212; /* Dark background */
-  --color-text: #e2e8f0; /* Light gray text */
-  --color-card: #1e1e1e; /* Dark gray card */
-  --color-primary: #3b82f6; /* Blue primary */
-  --color-border: #333; /* Dark border */
-  --color-muted: #a0a0b0; /* Muted gray */
+  --color-bg: #121212;
+  --color-text: #e2e8f0; 
+  --color-card: #1e1e1e; 
+  --color-primary: #3b82f6;
+  --color-border: #333; 
+  --color-muted: #a0a0b0; 
 }
 
 body {
@@ -56,7 +55,7 @@ body {
 
 .player-bar {
   grid-column: 2 / span 2;
-  background: linear-gradient(135deg, var(--color-primary), #4a90e2); /* Dark blue gradient */
+  background: linear-gradient(135deg, var(--color-primary), #4a90e2); 
   padding: 1rem;
   display: flex;
   align-items: center;
@@ -79,7 +78,7 @@ body {
   border: 8px solid var(--color-text);
   border-top-color: transparent;
   border-radius: 50%;
-  /* No animation (as per previous request) */
+
 }
 
 .logo-text {
@@ -122,7 +121,6 @@ body {
   transform: scale(1.03);
 }
 
-/* Main Content */
 .categories {
   display: flex;
   gap: 0.5rem;
@@ -222,7 +220,6 @@ body {
   background: var(--color-border);
 }
 
-/* Rightbar */
 .search-bar input {
   width: 100%;
   padding: 0.5rem;
@@ -289,7 +286,6 @@ body {
   background: var(--color-border);
 }
 
-/* Player Bar */
 .current-song {
   display: flex;
   align-items: center;
